@@ -1,0 +1,306 @@
+/* all */
+body {
+    background-color: gainsboro;
+}
+/* */
+.content {
+
+}
+
+/* single page */
+.page {
+    position:absolute;
+    background-color: white;
+}
+/* section */
+
+.section{
+
+
+}
+
+
+/* dialog */
+.dialog {
+    position: absolute;
+    margin: auto;
+    border-radius: 0px;
+    border-width: 1px;
+    min-width: 320px;
+    min-height: 450px;
+    border-color: deeppink;
+    background-color: whitesmoke;
+}
+.dialog-background {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: fixed;
+    background-color: black;
+    opacity: 0.5;
+}
+
+
+
+
+.breadcrumb {
+    border-radius: initial;
+}
+
+
+
+
+/*.nav-tabs {
+    background: linear-gradient(0deg,#dee2e6, #f2f2f2);
+    border-top-left-radius:1px;
+    border-top-right-radius:1px;
+}
+
+ .nav-tabs .nav-link.active {
+        background-color: #f2f2f2 !important;
+        border-left: 1px solid rgba(72,117,179,.3) !important;
+        border-bottom: 1px solid #f2f2f2 !important;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }*/
+
+button.close {
+}
+
+button.close:hover{
+    background-color:red;
+}
+
+.nav-link.disabled {
+    cursor: pointer;
+}
+
+input[type=number]{
+    text-align:right;
+}
+
+.section {
+    min-height: 450px;
+}
+
+/*h1 {
+    padding: .5em .75em;
+    background-color: #f6f6f6;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 0 rgba(255, 255, 255, .5) inset;
+}*/
+
+
+h2 {
+    margin-top:20px;
+    padding-bottom: .5em;
+    border-bottom: 3px solid #ccc;
+}
+h2:first-letter {
+    margin-right: .1em;
+    font-size: 1.5em;
+}
+
+
+h3 {
+    padding: .5em .75em;
+    background-color: #f6f6f6;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 0 rgba(255, 255, 255, .5) inset;
+    font-size: 15px;
+}
+h3:first-letter {
+    margin-right: .1em;
+    font-size: 1.2em;
+}
+
+
+
+/* スクロールバーをコンパクトに */
+body {
+    overflow: overlay;
+}
+
+button.navbar-toggler {
+   font-size:1em !important;
+}
+
+
+
+.home {
+    background-color: #F4F4F2;
+
+    @media screen and (max-width: 768px) {
+
+        button.navbar-toggler {
+            top: -100px !important;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+
+        button.navbar-toggler {
+            top: -50px !important;
+        }
+    }
+}
+
+
+/* enter、 leave アニメーションで異なる間隔やタイミング関数を利用することができます */
+.slide-fade-enter-active {
+    transition: all .3s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+.nav-link.disabled {
+    cursor: default;
+}
+
+.btn {
+    border-radius: 5px;
+}
+
+.btn-success {
+    background-color: #075d1b;
+    border-color: #075d1b;
+}
+
+.subtitle {
+    display: block;
+    font-size: 0.4em;
+}
+
+h1.title {
+    position: absolute;
+    /*z-index: 1000;*/
+    display: block;
+    left: 10px;
+    top: 10px;
+    color: white;
+    text-shadow: 3px 1px 9px #000;
+}
+
+.navbar-collapse {
+    max-width: 2500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-columns {
+    column-count: 4;
+    max-width: 2500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card-columns {
+        column-count: 2;
+    }
+
+    .carousel-caption {
+        top: 20px;
+    }
+
+    .carousel-caption p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        top: 0 !important;
+        font-size: 1.8em;
+    }
+
+    .subtitle {
+        display: none !important;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 .title {
+        top: 0 !important;
+        font-size: 1.3em !important;
+    }
+
+    .subtitle {
+        display: none !important;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.0em;
+    }
+
+    .carousel-caption {
+        display: none;
+    }
+
+    .card-columns {
+        column-count: 1;
+    }
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    background: #e8eaec;
+    border-radius: 13px;
+    box-shadow: inset 0 0 0 1px #9E9E9E;
+}
+
+::-webkit-scrollbar-track {
+    background: #e8eaec;
+    border-left: solid 1px #ececec;
+}
+
+@media screen and (max-width: 768px) {
+
+    header img {
+        width: 100vw;
+    }
+    button.navbar-toggler {
+        z-index: 101;
+        position: absolute;
+        right: 10px;
+        top: 4px;
+    }
+    header nav.navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,12 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["aeBrain Experimental Site"];
+    ViewData["Description"] = Localizer["Use this area to provide additional information."];
+}
+<div id="app"></div>
+
+@section scripts {
+    <script src="~/dist/main.js" asp-append-version="true"></script>
+}

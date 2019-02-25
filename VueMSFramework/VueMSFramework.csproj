@@ -1,0 +1,137 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>VueMSFramework</AssemblyName>
+    <RootNamespace>VueMSFramework</RootNamespace>
+    <LangVersion>7.1</LangVersion>
+    <SignAssembly>false</SignAssembly>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+    <ApplicationIcon />
+    <Win32Resource />
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DotNetCore.NPOI" Version="1.2.1" />
+    <PackageReference Include="KK.AspNetCore.StaticFileCache" Version="0.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.CookiePolicy" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.HttpsPolicy" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="2.6.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="NPOI.Core.Extension" Version="1.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.3.0" />
+    <PackageReference Include="System.Linq" Version="4.3.0" />
+    <PackageReference Include="Webpack" Version="4.0.0" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Files not to show in IDE -->
+    <None Remove="ClientApp\components\spa-root-lib.ts" />
+    <None Remove="mydatabase.db" />
+    <None Remove="mydatabase.db-journal" />
+    <None Remove="Properties\PublishProfiles\itsukara - Web Deploy.pubxml" />
+    <None Remove="Properties\PublishProfiles\Vue2Spa20171216011929 - Web Deploy.pubxml" />
+    <None Remove="yarn.lock" />
+    <Compile Remove="ClientApp\components\shared\**" />
+    <Compile Remove="Models\Common\**" />
+    <Compile Remove="Resources\Itsukara\**" />
+    <Compile Remove="wwwroot\images\新しいフォルダー\**" />
+    <Compile Remove="wwwroot\webcam\**" />
+
+    <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
+    <Content Remove="ClientApp\**" />
+    <Content Remove="Models\Common\**" />
+    <Content Remove="Resources\Itsukara\**" />
+    <Content Remove="wwwroot\images\新しいフォルダー\**" />
+    <Content Remove="wwwroot\webcam\**" />
+    <EmbeddedResource Remove="ClientApp\components\shared\**" />
+    <EmbeddedResource Remove="Models\Common\**" />
+    <EmbeddedResource Remove="Resources\Itsukara\**" />
+    <EmbeddedResource Remove="wwwroot\images\新しいフォルダー\**" />
+    <EmbeddedResource Remove="wwwroot\webcam\**" />
+    <None Remove="ClientApp\components\shared\**" />
+    <None Remove="Models\Common\**" />
+    <None Remove="Resources\Itsukara\**" />
+    <None Remove="wwwroot\images\新しいフォルダー\**" />
+    <None Remove="wwwroot\webcam\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\SessionController.cs" />
+    <Compile Remove="Controllers\UserController.cs" />
+    <Compile Remove="Data\MyDbContext.cs" />
+    <Compile Remove="Services\UserService.cs" />
+    <Compile Remove="AeHeart\Utils\_DnaManager.cs" />
+    <Compile Remove="AeHeart\Utils\_Metadata.cs" />
+    <Compile Remove="ViewModels\Common\_ViewModel.cs" />
+    <Compile Remove="ViewModels\Home\ActivityViewModel.cs" />
+    <Compile Remove="ViewModels\Home\IndexViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Resources\ViewModels.Auth.Refer.ja.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="Views\Session\SignedOut.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\_ValidationScriptsPartial.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="ViewModels\Home\" />
+    <Folder Include="Views\Auth\" />
+    <Folder Include="wwwroot\files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\spa-auth-lib.ts" />
+    <TypeScriptCompile Include="ClientApp\components\%40common\ae-tags\ae-tag.ts" />
+    <TypeScriptCompile Include="ClientApp\components\%40common\ae-transition-utils.ts" />
+    <TypeScriptCompile Include="ClientApp\components\**\listener.ts" />
+  </ItemGroup>
+  <Target Name="RunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec Command="npm install" />
+    <Exec Command="node node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js --env.prod" />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="wwwroot\dist\**; ClientApp\dist\**" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptModuleKind>ES6</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+</Project>

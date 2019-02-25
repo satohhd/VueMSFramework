@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Identification NG";
+}
+<h2>@ViewData["Title"]</h2>
+
+<p>We could not verify your identity.</p>
+<script>
+    setTimeout(function () {
+        window.location.href = '/auth';
+    }, 5 * 1000);
+</script>
