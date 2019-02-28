@@ -3,7 +3,7 @@
         <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
         <b-collapse is-nav id="nav_collapse">
             <b-navbar-nav>
-                <b-nav-item to="/about" :disabled="page==='about'">about</b-nav-item>
+                <b-nav-item to="/home" :disabled="page==='home'">home</b-nav-item>
                 <b-nav-item-dropdown>
                     <template slot="button-content">
                         <em>Example</em>

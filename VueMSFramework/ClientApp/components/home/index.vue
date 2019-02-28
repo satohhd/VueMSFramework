@@ -90,7 +90,7 @@
             * initPage
             *
             ******************************************************************* */
-            initPage: function () {
+            initialize: function () {
                 //this.$store.dispatch('setAuthorize', { authorize: this.isAuth });
             },
          
@@ -133,7 +133,7 @@
         *
         ******************************************************************* */
         mounted: function () {
-            this.initPage();
+            this.initialize();
         },
         /** *****************************************************************
         *

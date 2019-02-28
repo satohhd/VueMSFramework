@@ -7,7 +7,6 @@ module.exports = (env) => {
     const extractCSS = new ExtractTextPlugin('vendor.css');
     const isDevBuild = !(process.env && process.env.NODE_ENV === 'production');
     //const isDevBuild = false;
-    console.log("isDevBuild2=" + isDevBuild)
     return [{
         stats: { modules: false },
         resolve: {

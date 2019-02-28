@@ -50,8 +50,6 @@ module.exports = (env) => {
                 { test: /\.js$/, include: /ClientApp/, use: 'babel-loader' },
                 { test: /\.scss?$/, loaders: ['style-loader', 'css-loader', 'sass-loader'] },
                 { test: /\.css$/, use: isDevBuild ? ['style-loader', 'css-loader'] : ExtractTextPlugin.extract({ use: 'css-loader' }) },
-//                { test: /\.css$/, loaders: ['style-loader', 'css-loader'] },
-                { test: /\.(png|jpg|jpeg|gif|svg)$/, use: 'url-loader?limit=25000' },
 //                { test: /\.(woff|woff2|eot|ttf|svg)$/,loader: 'file-loader?name=../font/[name].[ext]'}
                 { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url-loader?mimetype=image/svg+xml' },
                 { test: /\.woff(\d+)?(\?v=\d+\.\d+\.\d+)?$/, loader: 'url-loader?mimetype=application/font-woff' },
