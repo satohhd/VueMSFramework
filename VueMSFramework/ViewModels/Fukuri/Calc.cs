@@ -17,7 +17,6 @@ namespace VueMSFramework.ViewModels.Fukuri
         [Range(0,1000000)]
         [Grid(6,3,3)]
         [Required]
-        [Event("calc","calc", isVerify:true)]
         public decimal Gnkn { get; set; }
 
         [DisplayName("金利")]
