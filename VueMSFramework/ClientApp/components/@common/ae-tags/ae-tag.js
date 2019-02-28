@@ -56,9 +56,9 @@ export default {
         * return void
         *
         ******************************************************************* */
-        onFileChange: function (e) {
+        onFileChange(e) {
             console.log("onFileChange");
-            var files = e.target.files || e.dataTransfer.files;
+            let files = e.target.files || e.dataTransfer.files;
             this.createImage(e.target.name, files[0]);
         },
         /* ******************************************************************
@@ -140,7 +140,7 @@ export default {
          * return void
         *
         ******************************************************************* */
-        onContextMenu: function (action, id) {
+        onContextMenu(action, id) {
             if (action === "edit") {
                 var currentPage = this.$route.query;
                 var nextPage = Object.create(currentPage);

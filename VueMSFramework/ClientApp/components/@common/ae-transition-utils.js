@@ -80,9 +80,9 @@ export default {
                 param = {};
             var param2 = {};
             if (event['paramItems']) {
-                var ary = event['paramItems'].split(',');
-                for (var s in ary) {
-                    var key = ary[s];
+                let ary = event['paramItems'].split(',');
+                for (let s in ary) {
+                    let key = ary[s];
                     param2[key] = param[key];
                 }
             }
@@ -100,7 +100,7 @@ export default {
             }
             var objParam = {};
             var query = this.$route.query;
-            for (var s in query) {
+            for (let s in query) {
                 objParam[s] = query[s];
             }
             var token = this._createToken(param2);
@@ -126,7 +126,7 @@ export default {
                 event["page"] = this.page;
             }
             var query = this.$route.query;
-            for (var s in query) {
+            for (let s in query) {
                 if (s != event["section"])
                     objParam[s] = query[s];
             }
@@ -142,12 +142,11 @@ export default {
         *
         ******************************************************************* */
         fileDownloader: function (id) {
-            var _this = this;
             this.$http.get('/api/' + this.page + '/export/' + id)
-                .then(function (response) {
-                _this._downloadFile(response.data.fileContents, response.data.contentType, response.data.fileDownloadName);
+                .then(response => {
+                this._downloadFile(response.data.fileContents, response.data.contentType, response.data.fileDownloadName);
             })
-                .catch(function (error) {
+                .catch(error => {
                 alert(error);
             });
         },
@@ -343,7 +342,7 @@ export default {
             }
             else {
                 // BlobをBlob URL Schemeへ変換してリンクタグへ埋め込む
-                var url = window.URL.createObjectURL(blob);
+                const url = window.URL.createObjectURL(blob);
                 var link = document.createElement('a');
                 link.href = url;
                 link.download = filename;

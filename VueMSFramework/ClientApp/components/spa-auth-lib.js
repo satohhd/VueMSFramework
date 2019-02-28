@@ -3,11 +3,10 @@ export default {
         return {};
     },
     created: function () {
-        var _this = this;
         this.$store.dispatch('setSignInUser', {});
         var signInUserJson = localStorage.getItem('signInUser');
         if (signInUserJson) {
-            var signInUser = JSON.parse(signInUserJson);
+            const signInUser = JSON.parse(signInUserJson);
             if (signInUser) {
                 this.$store.dispatch('setSignInUser', { authorized: signInUser.authorized, applying: signInUser.applying, userName: signInUser.userName });
                 //this.$store.dispatch('setSignInUser', { authorized: response.data.authorized, applying: response.data.applying, userName: response.data.userName });
@@ -18,8 +17,8 @@ export default {
             this.$store.dispatch('setLang', lang);
         }
         // Add a request interceptor
-        this.$http.interceptors.request.use(function (config) {
-            var signInUser = JSON.parse(localStorage.getItem('signInUser'));
+        this.$http.interceptors.request.use((config) => {
+            const signInUser = JSON.parse(localStorage.getItem('signInUser'));
             if (!signInUser) {
                 if (config.headers) {
                     if (config.headers["Authorization"]) {
@@ -44,9 +43,9 @@ export default {
                     }
                 }
                 //言語設定がある場合
-                var lang_1 = localStorage.getItem('lang');
-                if (lang_1) {
-                    config.headers['accept-language'] = lang_1;
+                const lang = localStorage.getItem('lang');
+                if (lang) {
+                    config.headers['accept-language'] = lang;
                 }
             }
             //  config.headers['X-Requested-With'] = 'XMLHttpRequest'
@@ -55,9 +54,9 @@ export default {
             //// Do something before request is sent
             //this.loading = true
             return config;
-        }, function (error) {
+        }, (error) => {
             console.log('request failed');
-            _this.loading = false;
+            this.loading = false;
             // Do something with request error
             alert(error);
             return;

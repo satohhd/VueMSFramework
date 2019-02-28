@@ -4,7 +4,7 @@ export default {
     * setting
     *
     ******************************************************************* */
-    data: function () {
+    data() {
         return {
             page: "auth",
             startUp: { section: "index", action: "index" },
