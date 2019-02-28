@@ -32,7 +32,7 @@
             </header>
             <section class="content">
                 <b-card-group columns>
-                   <b-card title="Welcome to The VueMultiSectionFramework ">
+                   <b-card title="Welcome!">
                        <p class="card-text">
                            Experimental site using Vue.<br />This site is created with a framework constructed using microsoft company's technology such as Vue and dotnet.Core 2.2, MVC, Linq etc. as a concept of multi section.
                        </p>
