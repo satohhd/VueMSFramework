@@ -7,19 +7,19 @@ namespace VueMSFramework.ViewModels.Auth
     public class Index : ViewModel
     {
     
-        [DisplayName("サインイン")]
+        [DisplayName("SignIn")]
         [HtmlTag("section")]
         public SignIn SignIn { get; set; }
 
-        [DisplayName("アカウント情報")]
+        [DisplayName("AccountInfo")]
         [HtmlTag("section")]
         public Refer Refer { get; set; }
 
-        [DisplayName("プロファイル編集")]
+        [DisplayName("EditProfile")]
         [HtmlTag("section")]
         public Edit Edit { get; set; }
 
-        [DisplayName("アカウント登録")]
+        [DisplayName("RegistAccount")]
         [HtmlTag("section")]
         public SignUp SignUp { get; set; }
 

@@ -117,14 +117,83 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AccountId" xml:space="preserve">
+    <value>アカウントID</value>
+  </data>
+  <data name="AccountInfo" xml:space="preserve">
+    <value>アカウント情報</value>
+  </data>
+  <data name="Applying" xml:space="preserve">
+    <value>申請中</value>
+  </data>
+  <data name="Authorized" xml:space="preserve">
+    <value>認証</value>
+  </data>
+  <data name="Click here for registered users" xml:space="preserve">
+    <value>登録済みの方はこちら</value>
+  </data>
+  <data name="Click here for the first time" xml:space="preserve">
+    <value>初めて利用される方はこちら</value>
+  </data>
+  <data name="Connected terminal information" xml:space="preserve">
+    <value>接続端末情報</value>
+  </data>
+  <data name="Create new" xml:space="preserve">
+    <value>新規作成します</value>
+  </data>
+  <data name="E-Mail" xml:space="preserve">
+    <value>メールアドレス</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="EditProfile" xml:space="preserve">
+    <value>プロファイル編集</value>
+  </data>
   <data name="EmailAddress" xml:space="preserve">
     <value>アカウント</value>
+  </data>
+  <data name="Enter your e-mail address" xml:space="preserve">
+    <value>メールアドレスを入力してください</value>
+  </data>
+  <data name="Expiration" xml:space="preserve">
+    <value>有効期間</value>
+  </data>
+  <data name="NewAccount" xml:space="preserve">
+    <value>新規アカウント</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="Redirect" xml:space="preserve">
+    <value>認証後のリダイレクト先</value>
+  </data>
+  <data name="RegistAccount" xml:space="preserve">
+    <value>アカウント登録</value>
+  </data>
+  <data name="Registration application" xml:space="preserve">
+    <value>登録申請</value>
+  </data>
+  <data name="Remote address" xml:space="preserve">
+    <value>リモートアドレス</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>サインイン</value>
+  </data>
+  <data name="SingUp" xml:space="preserve">
+    <value>サインアップ</value>
+  </data>
+  <data name="Store" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Terminal address" xml:space="preserve">
+    <value>端末アドレス</value>
   </data>
   <data name="The input is incorrect" xml:space="preserve">
     <value>未入力項目があります</value>
   </data>
-  <data name="The input is incorrect." xml:space="preserve">
-    <value>未入力項目があります</value>
+  <data name="Ticket" xml:space="preserve">
+    <value>チケット</value>
   </data>
   <data name="User Name" xml:space="preserve">
     <value>ユーザ名</value>

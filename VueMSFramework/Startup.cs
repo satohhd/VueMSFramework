@@ -177,7 +177,7 @@ namespace VueMSFramework
 
             app.UseRequestLocalization(new RequestLocalizationOptions
             {
-                DefaultRequestCulture = new RequestCulture("ja"),
+                DefaultRequestCulture = new RequestCulture("en"),
                 // Formatting numbers, dates, etc.
                 SupportedCultures = supportedCultures,
                 // UI strings that we have localized.

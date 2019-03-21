@@ -406,6 +406,12 @@ namespace VueMSFramework.Core
                         {
                             if (placeHolder.Placeholder != null)
                             sf.Placeholder = placeHolder.Placeholder;
+                            if (_localizer != null)
+                            {
+                                sf.Placeholder = _localizer.GetString(placeHolder.Placeholder);
+                            }
+
+
                         }
                         if (defaultValue != null)
                         {

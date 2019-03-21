@@ -5,25 +5,25 @@ using VueMSFramework.ViewModels.Common;
 
 namespace VueMSFramework.ViewModels.Auth
 {
-    [DisplayName("サインアップ")]
-    [Description("新規作成します")]
+    [DisplayName("SingUp")]
+    [Description("Create new")]
     public class SignUp : ViewModel
     {
 
-        [DisplayName("新規アカウント")]
+        [DisplayName("NewAccount")]
         [HtmlTag("h","2")]
         [Grid(6, 3, 3)]
         public string Header1 { get; set; }
 
 
-        [DisplayName("メールアドレス")]
+        [DisplayName("E-Mail")]
         [HtmlTag("input", "email")]
-        [Placeholder("メールアドレスを入力してください")]
+        [Placeholder("Enter your e-mail address")]
         [Required]
         [Grid(6, 3, 3)]
         public string Email { get; set; }
 
-        [DisplayName("端末アドレス")]
+        [DisplayName("Terminal address")]
         [HtmlTag("input", "hidden")]
         [Grid(6, 3, 3)]
         [Required]
@@ -31,7 +31,7 @@ namespace VueMSFramework.ViewModels.Auth
         [StringLength(40)]
         public string TermAddr { get; set; }
 
-        [DisplayName("リモートアドレス")]
+        [DisplayName("Remote address")]
         [HtmlTag("input", "hidden")]
         [Required]
         [Grid(6, 3, 3)]
@@ -39,8 +39,7 @@ namespace VueMSFramework.ViewModels.Auth
         [StringLength(40)]
         public string RemoteAddr { get; set; }
 
-        //ユーザ項目
-        [DisplayName("氏名")]
+        [DisplayName("User Name")]
         [Required]
         [StringLength(100)]
         [HtmlTag("input", "text")]
@@ -48,25 +47,25 @@ namespace VueMSFramework.ViewModels.Auth
         [Grid(6, 3, 3)]
         public string UserName { get; set; }
 
-        [DisplayName("パスワード")]
+        [DisplayName("Password")]
         [HtmlTag("input", "password")]
         [Grid(6, 3, 3)]
         public string Password { get; set; }
 
 
-        [DisplayName("チケット")]
+        [DisplayName("Ticket")]
         [HtmlTag("input", "hidden")]
         public string Ticket { get; set; }
 
 
-        [DisplayName("登録申請")]
+        [DisplayName("Registration application")]
         [HtmlTag("button")]
         [Event("signUp/request","signUp", isVerify: true)]
         [Redirect("signIn", "signIn")]
         [Grid(6, 3, 3)]
         public string BtnRequest { get; set; }
 
-        [DisplayName("登録済みの方はこちら")]
+        [DisplayName("Click here for registered users")]
         [HtmlTag("link")]
         [Event("signIn","signIn", pageName: "auth")]
         [Grid(6, 3, 3)]

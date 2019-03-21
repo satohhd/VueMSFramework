@@ -32,7 +32,6 @@ namespace VueMSFramework.ViewModels.Auth
 
         public bool IsDraft { get; set; } = true;
 
-        //ユーザ項目
 
         [DisplayName("送信者")]
         [HtmlTag("input", "text", "kana-name")]
