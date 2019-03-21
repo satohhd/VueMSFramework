@@ -5,12 +5,12 @@ using System;
 using VueMSFramework.Data;
 using VueMSFramework.ViewModels.MSection;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
 
     [Route("api/[controller]")]
     [ApiController]
-    public class MSectionController : PageController
+    public class MSectionController : PageController<MSectionController>
     {
         public MSectionController(ApplicationDbContext context, IStringLocalizer<MSectionController> localizer) : base(context, localizer)
         {

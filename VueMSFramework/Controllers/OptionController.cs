@@ -8,13 +8,13 @@ using VueMSFramework.Data;
 using VueMSFramework.Models;
 using VueMSFramework.ViewModels.Option;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
 
 
     [Route("api/[controller]")]
     [ApiController]
-    public class OptionController : PageController
+    public class OptionController : PageController<OptionController>
     {
         public OptionController(ApplicationDbContext context, IStringLocalizer<OptionController> localizer) : base(context, localizer)
         {

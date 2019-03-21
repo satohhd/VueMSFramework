@@ -96,6 +96,9 @@
     import aeTagPre from './@common/ae-tags/ae-tag-pre.vue'
     Vue.component('ae-tag-pre', aeTagPre)
 
+    import aeTagP from './@common/ae-tags/ae-tag-p.vue'
+    Vue.component('ae-tag-p', aeTagP)
+
     import aeTagPager from './@common/ae-tags/ae-tag-pagination.vue'
     Vue.component('ae-tag-pagination', aeTagPager)
 

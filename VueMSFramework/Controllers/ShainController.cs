@@ -8,12 +8,12 @@ using VueMSFramework.Data;
 using VueMSFramework.Models.kintai;
 using VueMSFramework.ViewModels.Shain;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
 
     [Route("api/[controller]")]
     [ApiController]
-    public class ShainController : PageController
+    public class ShainController : PageController<ShainController>
     {
         public ShainController(ApplicationDbContext context, IStringLocalizer<ShainController> localizer) : base(context, localizer)
         {

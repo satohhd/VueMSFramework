@@ -22,14 +22,12 @@ namespace VueMSFramework.Core
         //private IStringLocalizerFactory _factory;
         private IStringLocalizer _localizer = null;
 
+        public DnaManager()
+        {
+        }
         public DnaManager(IStringLocalizer localizer)
         {
             _localizer = localizer;
-        }
-
-        public DnaManager()
-        {
-           //モデルコピーのとき利用
         }
 
         private bool _IsList(Type type)

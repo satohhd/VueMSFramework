@@ -6,12 +6,12 @@ using System.Collections.Generic;
 using VueMSFramework.Data;
 using VueMSFramework.ViewModels.Fukuri;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
 
     [Route("api/[controller]")]
     [ApiController]
-    public class FukuriController : PageController
+    public class FukuriController : PageController<FukuriController>
     {
         public FukuriController(ApplicationDbContext context, IStringLocalizer<FukuriController> localizer) : base(context, localizer)
         {

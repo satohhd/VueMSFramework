@@ -9,13 +9,13 @@ using VueMSFramework.Data;
 using VueMSFramework.Models;
 using VueMSFramework.ViewModels.Exam;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
 
 
     [Route("api/[controller]")]
     [ApiController]
-    public class ExamController : PageController
+    public class ExamController : PageController<ExamController>
     {
         public ExamController(ApplicationDbContext context, IStringLocalizer<ExamController> localizer) : base(context, localizer)
         {

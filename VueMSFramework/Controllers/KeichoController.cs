@@ -9,12 +9,12 @@ using VueMSFramework.Data;
 using VueMSFramework.Models.Keicho;
 using VueMSFramework.ViewModels.Keicho;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
 
     [Route("api/[controller]")]
     [ApiController]
-    public class KeichoController : PageController
+    public class KeichoController : PageController<KeichoController>
     {
         public KeichoController(ApplicationDbContext context, IStringLocalizer<KeichoController> localizer) : base(context, localizer)
         {

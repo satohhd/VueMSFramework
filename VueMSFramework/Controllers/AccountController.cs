@@ -8,12 +8,12 @@ using VueMSFramework.Data;
 using VueMSFramework.Models.Auth;
 using VueMSFramework.ViewModels.Account;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
 
     [Route("api/[controller]")]
     [ApiController]
-    public class AccountController : PageController
+    public class AccountController : PageController<AccountController>
     {
         public AccountController(ApplicationDbContext context, IStringLocalizer<AccountController> localizer) : base(context, localizer)
         {

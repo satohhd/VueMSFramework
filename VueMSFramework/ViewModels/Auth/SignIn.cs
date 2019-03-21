@@ -52,14 +52,14 @@ namespace VueMSFramework.ViewModels.Auth
         public string RemoteAddr { get; set; }
 
         //ユーザ項目
-        [DisplayName("ユーザ名")]
+        [DisplayName("User Name")]
         [StringLength(100)]
         [HtmlTag("input", "hidden")]
         [Grid(6, 3, 3)]
         public string UserName { get; set; }
 
 
-        [DisplayName("パスワード")]
+        [DisplayName("password")]
         [StringLength(100)]
         [HtmlTag("input", "password")]
         [Required]

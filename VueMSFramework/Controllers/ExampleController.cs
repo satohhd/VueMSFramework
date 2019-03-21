@@ -5,12 +5,12 @@ using System;
 using VueMSFramework.Data;
 using VueMSFramework.ViewModels.Example;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
 
     [Route("api/[controller]")]
     [ApiController]
-    public class ExampleController : PageController
+    public class ExampleController : PageController<ExampleController>
     {
         public ExampleController(ApplicationDbContext context, IStringLocalizer<ExampleController> localizer) : base(context, localizer)
         {

@@ -10,10 +10,10 @@ using VueMSFramework.Data;
 using VueMSFramework.Models;
 using VueMSFramework.ViewModels.Activity;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
     [Route("api/[controller]")]
-    public class ActivityController : PageController
+    public class ActivityController : PageController<ActivityController>
     {
         public ActivityController(ApplicationDbContext context, IStringLocalizer<ActivityController> localizer) : base(context, localizer)
         {

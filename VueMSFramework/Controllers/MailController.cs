@@ -13,12 +13,12 @@ using VueMSFramework.Data;
 using VueMSFramework.Models;
 using VueMSFramework.ViewModels.Mail;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
 
     [Route("api/[controller]")]
     [ApiController]
-    public class MailController : PageController
+    public class MailController : PageController<MailController>
     {
         public MailController(ApplicationDbContext context, IStringLocalizer<MailController> localizer) : base(context, localizer)
         {

@@ -9,11 +9,11 @@ using VueMSFramework.Data;
 using VueMSFramework.Models;
 using VueMSFramework.ViewModels.Tuser;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TuserController : PageController
+    public class TuserController : PageController<TuserController>
     {
         public TuserController(ApplicationDbContext context, IStringLocalizer<TuserController> localizer) : base(context, localizer)
         {

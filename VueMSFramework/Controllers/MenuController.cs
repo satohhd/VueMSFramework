@@ -11,7 +11,7 @@ using VueMSFramework.Data;
 using VueMSFramework.Models.Auth;
 using VueMSFramework.ViewModels.Auth;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
 
     public class  Param
@@ -23,7 +23,7 @@ namespace Vue2Spa.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    public class MenuController : PageController
+    public class MenuController : PageController<MenuController>
     {
         public MenuController(ApplicationDbContext context, IStringLocalizer<MenuController> localizer) : base(context, localizer)
         {

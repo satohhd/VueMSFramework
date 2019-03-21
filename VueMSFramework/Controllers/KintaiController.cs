@@ -9,12 +9,12 @@ using VueMSFramework.Data;
 using VueMSFramework.Models.Kintai;
 using VueMSFramework.ViewModels.Kintai;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
 
     [Route("api/[controller]")]
     [ApiController]
-    public class KintaiController : PageController
+    public class KintaiController : PageController<KintaiController>
     {
         public KintaiController(ApplicationDbContext context, IStringLocalizer<KintaiController> localizer) : base(context, localizer)
         {

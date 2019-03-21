@@ -9,13 +9,13 @@ using VueMSFramework.Data;
 using VueMSFramework.Models;
 using VueMSFramework.ViewModels.Group;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
 
 
     [Route("api/[controller]")]
     [ApiController]
-    public class GroupController : PageController
+    public class GroupController : PageController<GroupController>
     {
         public GroupController(ApplicationDbContext context, IStringLocalizer<GroupController> localizer) : base(context, localizer)
         {

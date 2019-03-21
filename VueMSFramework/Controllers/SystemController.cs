@@ -9,12 +9,12 @@ using System.Text.RegularExpressions;
 using VueMSFramework.Data;
 using VueMSFramework.ViewModels.System;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
 
     [Route("api/[controller]")]
     [ApiController]
-    public class SystemController : PageController
+    public class SystemController : PageController<SystemController>
     {
         public SystemController(ApplicationDbContext context, IStringLocalizer<SystemController> localizer) : base(context, localizer)
         {

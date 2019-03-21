@@ -10,11 +10,11 @@ using VueMSFramework.Data;
 using VueMSFramework.Models.Auth;
 using VueMSFramework.ViewModels.Auth;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AuthController : PageController
+    public class AuthController : PageController<AuthController>
     {
         public AuthController(ApplicationDbContext context, IStringLocalizer<AuthController> localizer) : base(context, localizer)
         {

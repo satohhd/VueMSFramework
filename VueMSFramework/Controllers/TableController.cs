@@ -12,12 +12,12 @@ using System.Security.Claims;
 using VueMSFramework.Data;
 using VueMSFramework.ViewModels.Table;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
 
     [Route("api/[controller]")]
     [ApiController]
-    public class TableController : PageController
+    public class TableController : PageController<TableController>
     {
         public TableController(ApplicationDbContext context, IStringLocalizer<TableController> localizer) : base(context, localizer)
         {

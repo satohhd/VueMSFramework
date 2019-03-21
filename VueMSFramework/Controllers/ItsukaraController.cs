@@ -8,12 +8,12 @@ using VueMSFramework.Data;
 using VueMSFramework.Models.Itsukara;
 using VueMSFramework.ViewModels.Itsukara;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
 
     [Route("api/[controller]")]
     [ApiController]
-    public class ItsukaraController : PageController
+    public class ItsukaraController : PageController<ItsukaraController>
     {
         public ItsukaraController(ApplicationDbContext context, IStringLocalizer<ItsukaraController> localizer) : base(context, localizer)
         {

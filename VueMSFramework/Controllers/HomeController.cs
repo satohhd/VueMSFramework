@@ -6,7 +6,7 @@ using Microsoft.Extensions.Localization;
 using System;
 using VueMSFramework.Data;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
     public class HomeController : Controller
     {

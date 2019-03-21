@@ -19,21 +19,22 @@ using VueMSFramework.Data;
 using VueMSFramework.Helpers;
 using VueMSFramework.Models.Auth;
 
-namespace Vue2Spa.Controllers
+namespace VueMSFramework.Controllers
 {
 
-    public abstract class PageController : ControllerBase
+    public abstract class PageController<T> : ControllerBase
     {
         protected ApplicationDbContext _context;
-        protected IStringLocalizer _localizer;
+        protected IStringLocalizer<T> _localizer;
         protected DnaManager _dm;
 
-        public PageController(ApplicationDbContext context, IStringLocalizer localizer)
+        public PageController(ApplicationDbContext context, IStringLocalizer<T> localizer)
         {
             _context = context;
             _localizer = localizer;
             _dm = new DnaManager(_localizer);
             Console.WriteLine("SharedMethodController constractor");
+            Console.WriteLine(_localizer["test"]);
         }
 
 

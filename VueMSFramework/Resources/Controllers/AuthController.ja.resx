@@ -117,55 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Account has already been registered." xml:space="preserve">
-    <value>既に登録済みです。</value>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>アカウント</value>
   </data>
-  <data name="Email" xml:space="preserve">
-    <value>メールアドレス</value>
-  </data>
-  <data name="Email1" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="Failed to restore. Please contact the system administrator." xml:space="preserve">
-    <value>復元化に失敗しました。 システム管理者へ連絡してください。</value>
-  </data>
-  <data name="Failed to restore. Please contact the system administrator.1" xml:space="preserve">
-    <value>復元化に失敗しました。 システム管理者へ連絡してください。({0})</value>
-  </data>
-  <data name="If you use the system please click this URL. {0}" xml:space="preserve">
-    <value>システムをご利用する方は、このURLをクリックしてください。{0}</value>
-  </data>
-  <data name="Other people have been updated. Please try again." xml:space="preserve">
-    <value>他の人が更新済みです。もう一度やり直してください</value>
-  </data>
-  <data name="Please check that the specified mail is correct." xml:space="preserve">
-    <value>指定のメールが正しいか確認ください。</value>
-  </data>
-  <data name="Please enter your e-mail address." xml:space="preserve">
-    <value>メールアドレスを入力してください</value>
-  </data>
-  <data name="Please enter your e-mail address.1" xml:space="preserve">
-    <value>Please enter your e-mail address.</value>
-  </data>
-  <data name="Please sign-in after registering e-mail." xml:space="preserve">
-    <value>メール登録してからSignInしてください</value>
-  </data>
-  <data name="SignIn" xml:space="preserve">
-    <value>サインイン</value>
-  </data>
-  <data name="SignIn1" xml:space="preserve">
-    <value>SignIn</value>
-  </data>
-  <data name="System error Please inform system personnel.({0})" xml:space="preserve">
-    <value>システムエラーです システム担当者へお知らせください。({0})</value>
+  <data name="The input is incorrect" xml:space="preserve">
+    <value>未入力項目があります</value>
   </data>
   <data name="The input is incorrect." xml:space="preserve">
-    <value>入力に誤りがあります</value>
+    <value>未入力項目があります</value>
   </data>
-  <data name="We could not restore it." xml:space="preserve">
-    <value>復元化できませんでした。</value>
-  </data>
-  <data name="We sent a person confirmation mail. Please SignIn after approval" xml:space="preserve">
-    <value>本人確認メールを送信しました。承認後 SignIn してください</value>
+  <data name="User Name" xml:space="preserve">
+    <value>ユーザ名</value>
   </data>
 </root>

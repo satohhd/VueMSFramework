@@ -94,7 +94,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\PublishProfiles\" />
-    <Folder Include="ViewModels\Home\" />
     <Folder Include="Views\Auth\" />
     <Folder Include="wwwroot\files\" />
   </ItemGroup>
